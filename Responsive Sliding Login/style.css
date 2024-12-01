@@ -1,0 +1,86 @@
+/*General styling*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./Media/background-img.jpg);
+}
+
+.heading,
+.title {
+    text-align: center;
+    color: hsl(194, 100%, 0);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: hsla(197, 59%, 74%, 0.6);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Form styling*/
+.login-box,
+.signup-box {
+    display: none;
+}
+
+.ele {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.ele:first-child {
+    margin-top: 5px;
+}
+
+.login,
+.signup {
+    background-color: hsl(194, 100%, 20%);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.clkbtn {
+    width: 96%;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: hsl(194, 100%, 20%);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: hsl(194, 100%, 5%);
+}
+
+/*Animation*/
+.slider {
+    height: 3px;
+    width: 50%;
+    margin-bottom: 5px;
+    background-color: hsl(194, 100%, 20%);
+    transition: transform 0.3s ease;
+}
+
+.login.active~.slider {
+    transform: translateX(0);
+}
+
+.signup.active~.slider {
+    transform: translateX(100%);
+    background-color: hsl(194, 100%, 5%);
+    width: 50px;
+
+}
